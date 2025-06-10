@@ -1,15 +1,17 @@
 # GraphQL Dashboard
 
-A visualization dashboard for Zone01 student data using the GraphQL API. This web application provides an interactive interface to view your progress, XP, projects, and audit statistics.
+A streamlined visualization dashboard for Zone01 student data using the GraphQL API. This web application provides an interactive interface to view your progress, XP, projects, and audit statistics.
 
-![Dashboard Preview](dashboard-preview.png)
+## Overview
+
+This dashboard allows Zone01 students to visualize their educational progress through an intuitive interface. It connects to the Zone01 GraphQL API to retrieve and display personalized statistics in a visually appealing format.
 
 ## Features
 
-- **Authentication System**: Secure login using Zone01's authentication API
+- **Secure Authentication**: Login using Zone01's authentication API
 - **User Profile**: Display personal information and profile details
 - **XP Statistics**: View total XP, monthly breakdown, and recent XP activities
-- **Project Stats**: Visual representation of successful vs. unsuccessful projects with a dynamic SVG chart
+- **Project Stats**: Visual representation of successful vs. unsuccessful projects
 - **Audit Activity**: Track your audit ratio, XP received and given through audits
 - **Progress Graph**: Interactive line graph showing XP progression over time
 
@@ -20,46 +22,50 @@ A visualization dashboard for Zone01 student data using the GraphQL API. This we
 - SVG for data visualization
 - GraphQL for data fetching
 - JWT authentication
+- TailwindCSS for styling
 
 ## Installation
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/your-username/GraphQL.git
+git clone https://github.com/nicgen/GraphQL.git
 cd GraphQL
 ```
-
-
-2. Open the project in your preferred code editor
-3. Use a local development server like Live Server to run the application
+2. Install dependencies:
+```bash
+npm install
+```
+3. Start the development server:
+```bash
+npm run dev
+```
 
 ## Usage
 
 1. Open the application in your web browser
 2. Log in with your Zone01 credentials
-3. Navigate through the dashboard to view your statistics:
-   - Left sidebar: Personal information and level progress
-   - Top boxes: XP, Projects, and Audit statistics
-   - Bottom graph: XP progression over time
+3. The dashboard will display your statistics:
+   - Personal information and level progress in the sidebar
+   - XP, Projects, and Audit statistics in the top section
+   - XP progression over time in the graph section
 
 ## Security Notes
 
 - Your credentials are never stored locally - only the JWT authentication token
 - The token is automatically removed when logging out
-- For production deployment, consider using environment variables instead of hardcoded values
 
 ## Data Visualization
 
-The dashboard includes several data visualizations:
+The dashboard provides several visualization components:
 
 1. **XP Progress Bar**: Shows progress to next level
-2. **Project Success Circle**: Visual representation of successful vs. unsuccessful projects
+2. **Project Success Circle**: Visual representation of project success rate
 3. **Audit Ratio Bars**: Compare XP given vs. received in audits
 4. **XP Timeline Graph**: Interactive chart showing XP growth over time
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
 
 ## Acknowledgements
 
