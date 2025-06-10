@@ -1,0 +1,173 @@
+/************** 
+    Body css
+ ***************/
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #2a3132; 
+    text-align: center;
+    color: #ffffff;
+  }
+  .box {
+    width: 350px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+  }
+  h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 5px;
+  }
+  /************** 
+   Input Fields
+  ***************/
+  #username, #pass{
+    border: 2px solid #0097e6;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 15px 45px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    transition: 250ms width ease, 250ms border-color ease;
+  }
+  /************** 
+     On Hover
+  ***************/
+  #username:hover, #pass:hover{
+    width: 220px;
+  }
+  /************** 
+     On Focus
+  ***************/
+  #username:focus, #pass:focus{
+    width: 250px;
+    border-color: #6fb98f;
+  }
+  /************** 
+   Submit Button
+  ***************/
+  #submit{
+    border: 2px solid #2ecc71;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px 40px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 200;
+    transition: 250ms background ease;
+    -webkit-transition: 250ms background ease;
+    -moz-transition: 250ms background ease;
+    -o-transition: 250ms background ease;
+  }
+  /************** 
+     On Hover
+  ***************/
+  #submit:hover{
+    background: #2ecc71;
+  }
+
+  .dashboard-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .sidebar {
+    width: 300px;
+    background: #191919;
+    border-radius: 25px;
+    padding: 30px;
+    margin-right: 20px;
+    text-align: left;
+  }
+  
+  .content-area {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .box-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    height: 100%;
+  }
+  
+  .data-box {
+    background: #191919;
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .graph-box {
+    grid-column: span 3; /* Make the graph box span all 3 columns */
+  }
+  
+  .bottom-box {
+    background: #191919;
+    border-radius: 25px;
+    padding: 30px;
+    flex: 1;
+  }
+
+  .logout-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+
+  .logout-btn:hover {
+    background: #c0392b;
+  }
+
+  .login-helpers {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  .clear-link {
+    color: #7f8c8d;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .clear-link:hover {
+    color: #e74c3c;
+  }
